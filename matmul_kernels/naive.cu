@@ -10,7 +10,7 @@ __global__ void multiply(float *A, float *B, float *C, int m, int n, int k){
     int offset_B = index;
     if (index < m * n){
         C[index] = 0;
-        for (int i = 0; i < k, i++){
+        for (int i = 0; i < k; i++){
             C[index] += A[offset_A + i]*B[offset_B + i * k];
         }
     }
