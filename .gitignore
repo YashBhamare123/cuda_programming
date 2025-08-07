@@ -1,0 +1,3 @@
+matmul_kernels/bin
+.*
+!/.gitignore
