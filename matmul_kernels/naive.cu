@@ -19,8 +19,14 @@ __global__ void multiply(float *A, float *B, float *C, int m, int n, int k){
 int main(){
     int num = 9;
     size_t size = num * sizeof(float);
-    float h_A[num] = {1., 1., 1., 1., 1., 1., 1., 1., 1.};
-    float h_B[num] ={1., 1., 1., 1., 1., 1., 1., 1., 1.};
+    float h_A[9] = {1., 2., 3.,
+                4., 5., 6.,
+                7., 8., 9.};
+
+    float h_B[9] = {9., 8., 7.,
+                6., 5., 4.,
+                3., 2., 1.};
+                
     float *h_C = (float*)malloc(size);
     float *d_A, *d_B, *d_C;
     
