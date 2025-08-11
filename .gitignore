@@ -1,3 +1,5 @@
 matmul_kernels/bin
 .*
 !/.gitignore
+CMakeLists.txt
+cmake-build-debug
